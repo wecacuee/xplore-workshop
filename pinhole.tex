@@ -18,7 +18,16 @@
 
 \begin{document}
 \maketitle
+\begin{frame}{Sources}
+  \begin{itemize}
+    \item 
+      \url{http://www.exploratorium.edu/science_explorer/pringles_pinhole.html}
+    \item
+      \url{http://www.learner.org/workshops/sheddinglight/}
+  \end{itemize}
+\end{frame}
 \begin{frame}{Pinhole camera}
+  \centering
   \includegraphics{media/girl_looks.png}
 \end{frame}
 
@@ -73,12 +82,73 @@ To keep light out of the tube, use a piece of aluminum foil that's about 1 foot 
 \end{frame}
 
 \begin{frame}{Pinhole camera is ready to use}
+  \centering
   \includegraphics{media/girl_looks.png}
 \end{frame}
 
 \section{How does it works}
-\begin{frame}{}
-  
+\begin{frame}{About light}
+
+Learning Objectives
+
+\begin{itemize}
+  \item 
+    Light energy travels in straight lines until it strikes a surface.
+  \item 
+    A shadow is formed when an object blocks the photons that are traveling from a light source.
+  \item 
+    Light travels fast, but not instantaneously.
+  \item 
+    We see because light from a source is reflected from an object to our eyes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ray diagram}
+  \includegraphics[width=\textwidth]{media/pinhole.png}
+\end{frame}
+
+\begin{frame}{Find the distance }
+  Can you find the distance of the object given the size of object.
+\end{frame}
+
+\begin{frame}{Similar triangles}
+  \includegraphics[width=\textwidth]{media/tri-similar1.png}
+\end{frame}
+
+\begin{frame}{Ray diagram}
+  \includegraphics[width=\textwidth]{media/pinhole_blurred.png}
+\end{frame}
+
+\begin{frame}
+  \begin{tikzpicture}
+    \draw (-4,-1) rectangle (0, 1);
+    \coordinate [label=above left:$O$] (origin) at (0,0);
+    \coordinate [label=below left:$A'$] (imga) at (-4, -0.8);
+    \coordinate [label=above left:$B'$] (imgb) at (-4, 0.8);
+    \draw [->,very thick,green!70!black] (imga) -- (imgb);
+    \coordinate [label=above right:$A$] (obja) at (6, 1.2);
+    \coordinate [label=below right:$B$] (objb) at (6, -1.2);
+    \draw [->,very thick,green!70!black] (obja) -- (objb);
+
+    \draw [-,thick,blue] (imga) -- (obja);
+    \draw [-,thick,blue] (imgb) -- (objb);
+    
+    \draw [red] let 
+    \p1 = ($ 0.1*(imga) $),
+    \n1 = {atan2(-\x1, -\y1)} 
+    in (\x1,\y1) arc (\n1:-\n1:\x1);
+
+    \draw [red] let 
+    \p1 = ($ 0.1*(obja) $),
+    \n1 = {atan2(\x1, \y1)} 
+    in (\x1,\y1) arc (\n1:-\n1:\x1);
+  \end{tikzpicture}
+\end{frame}
+
+\section{Introducing a lens}
+
+\begin{frame}{Iteractive animation}
+  \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
 \end{frame}
 
 \end{document}
