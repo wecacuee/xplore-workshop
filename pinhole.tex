@@ -15,23 +15,92 @@
 \date{\today}
 \author{Vikas Dhiman\\ David Johnson\\ Jason J Corso}
 \institute{University of Michigan}
+\bibliography{pinhole}
 
 \begin{document}
 \maketitle
-\begin{frame}{Sources}
-  \begin{itemize}
-    \item 
-      \url{http://www.exploratorium.edu/science_explorer/pringles_pinhole.html}
-    \item
-      \url{http://www.learner.org/workshops/sheddinglight/}
-  \end{itemize}
+\begin{frame}{Contents}
+  % This slide will be removed later
+  \tableofcontents
 \end{frame}
-\begin{frame}{Pinhole camera}
-  \centering
-  \includegraphics{media/girl_looks.png}
+% \begin{frame}{Sources}
+%   \begin{itemize}
+%     \item 
+%       \url{http://www.exploratorium.edu/science_explorer/pringles_pinhole.html}
+%     \item
+%       \url{http://www.learner.org/workshops/sheddinglight/}
+%   \end{itemize}
+% \end{frame}
+% \begin{frame}{Pinhole camera}
+%   \centering
+%   \includegraphics{media/girl_looks.png}
+% \end{frame}
+
+\section{About Light}
+% Interesting notes/facts/videos about how human eye works.
+% First camera "possibly" developed by ancient greeks and ancient Chinese.
+% First documented description of a camera dates back to 1021 AD by a Arab physicist Ibn al-Haytham in his "Book of optics"
+%%
+%% How do you think our eyes work?
+%% 
+%% 
+%% or 
+%% 
+%% 
+% Rhetoric questions? Get kids involved
+% What do kids think, how does eye/camera work?
+\begin{frame}{How do you think our eyes work?}
+  \begin{columns}
+    \begin{column}{0.8\textwidth}
+      \begin{itemize}
+        \item
+          Does the ``sight'' travel from our eyes to the object?\\
+          \visible<2-> {\color{red}{Euclid other Greek believed so around 300 BC}\footfullcite{BBC:Let there be Light (2006)}}
+        \item
+          \color{black}{or the ``light'' travels from the object to our eyes?}\\
+          \visible<3-> {\color{red}Modern scientists the believe so, and I have no reasons to question them.}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.2\textwidth}
+        \includegraphics[width=\columnwidth]{media/lghtmisc2.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% \begin{frame}{What does it mean to see things?}
+% 
+% \end{frame}
+
+\begin{frame}{What is light?}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+        \item Greek philosophers believed that sight was possible because of interaction of fire in eyes and in the sun.
+        \item Euclid, a Greek philosopher, gave  us some particular insights about light.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \includegraphics[width=\columnwidth]{media/Euklid.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Light travels in straight lines}
+  \footfullcite{BBC:Let there be Light (2006)}
+    \includemedia[label=euclid-straight-lines,
+      width=\linewidth,height=0.6\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/euclid-straight-lines.mp4,
+      flashvars={
+        source=media/euclid-straight-lines.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{\includegraphics{media/euclid-straight-lines.png}}{VPlayer.swf}
 \end{frame}
 
 \section{Making a pinhole camera}
+\frame{\tableofcontents[currentsection]}
 \begin{frame}{Step 1}
   \begin{columns}
     \begin{column}{0.4\textwidth}
@@ -130,25 +199,56 @@ Learning Objectives
     \coordinate [label=below right:$B$] (objb) at (6, -1.2);
     \draw [->,very thick,green!70!black] (obja) -- (objb);
 
-    \draw [-,thick,blue] (imga) -- (obja);
-    \draw [-,thick,blue] (imgb) -- (objb);
+    \draw [thick,blue] (imga) -- (obja);
+    \draw [thick,blue] (imgb) -- (objb);
     
     \draw [red] let 
-    \p1 = ($ 0.1*(imga) $),
+    \p1 = ($ 0.2*(imga) $),
     \n1 = {atan2(-\x1, -\y1)} 
-    in (\x1,\y1) arc (\n1:-\n1:\x1);
+    in (\x1,\y1) arc (\n1:0:\x1);
 
     \draw [red] let 
-    \p1 = ($ 0.1*(obja) $),
+    \p1 = ($ 0.2*(obja) $),
     \n1 = {atan2(\x1, \y1)} 
-    in (\x1,\y1) arc (\n1:-\n1:\x1);
+    in (\x1,\y1) arc (\n1:0:\x1);
+
+    \draw [thick,blue,dashed] ($0.5*(imga)+0.5*(imgb)$) node [text=black,anchor=east] {$C'$} -- ($0.5*(obja)+0.5*(objb)$) node [text=black,anchor=west] {$C$};
   \end{tikzpicture}
+  \centering
+  \begin{align}
+    \frac{AC}{OC} = \frac{A'C'}{OC'}
+  \end{align}
+\end{frame}
+
+\begin{frame}
+
+  Can we compute the distance of object?
+  
+\end{frame}
+
+\begin{frame}{Multiple pinholes}
+
+  What happens when we make multiple pinholes?
+  
+\end{frame}
+
+\begin{frame}{Bigger pinhole}
+
+  What happens we make pinhole to a pencil-hole?
+  
 \end{frame}
 
 \section{Introducing a lens}
 
-\begin{frame}{Iteractive animation}
-  \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
+\begin{frame}
+
+  Now try using a lens?
+  
 \end{frame}
 
+\begin{frame}{Iteractive animation}
+
+  \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
+
+\end{frame}
 \end{document}
