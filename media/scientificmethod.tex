@@ -1,0 +1,15 @@
+
+\begin{tikzpicture}[]
+ \newcommand{\nodeonecolor}[1]{\if1#1red\else white\fi}
+
+\def \n {6}
+\def \radius {6}
+\def \margin {10} % margin in angles, depends on the radius
+
+\foreach \s/\t in {1/Purpose,2/Research,3/Hypothesis,4/Experiment,5/Analysis,6/Conclusion}
+{
+  \node[fill=\nodeonecolor{\s},circle,minimum width=3] at ({360/\n * (\s - 1)}:\radius) {\t};
+  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+\end{tikzpicture}

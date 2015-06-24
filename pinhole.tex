@@ -11,7 +11,7 @@
 % transparency
 %\setbeamercovered{transparent=15}
 
-\title{Pinhole camera}
+\title{Computer Imaging: Build Your Own Camera}
 \date{\today}
 \author{Vikas Dhiman\\ David Johnson\\ Jason J Corso}
 \institute{University of Michigan}
@@ -22,6 +22,32 @@
 \begin{frame}{Contents}
   % This slide will be removed later
   \tableofcontents
+\end{frame}
+
+\begin{frame}{Modern cameras}
+    \includemedia[label=high-fps-camera,
+      width=\linewidth,height=0.5\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/bullet-time.mp4,
+      flashvars={
+        source=media/bullet-time.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{\includegraphics[width=\textwidth]{media/bullet-time.png}}{VPlayer.swf}
+\end{frame}
+
+\begin{frame}{Modern cameras}
+    \includemedia[label=matrix-bullet-time-shot,
+      width=\linewidth,height=0.6\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/bullet-time-shot.mp4,
+      flashvars={
+        source=media/bullet-time-shot.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{\includegraphics[width=\textwidth]{media/bullet-time-shot.png}}{VPlayer.swf}
 \end{frame}
 % \begin{frame}{Sources}
 %   \begin{itemize}
@@ -49,22 +75,30 @@
 %% 
 % Rhetoric questions? Get kids involved
 % What do kids think, how does eye/camera work?
+\begin{frame}{How do we see things?}
+  \input{tikz/suntreeboy.tex}
+\end{frame}
 
-\begin{frame}{How do you think our eyes work?}
+%\begin{frame}[fragile]{Scientific method}
+%  \input{tikz/scientificmethod.tex}
+%\end{frame}
 
+\begin{frame}{How do we see things?}
   \begin{columns}
-    \begin{column}{0.75\textwidth}
+    \begin{column}{0.7\textwidth}
       \begin{itemize}
         \item
           Does the ``sight'' travel from our eyes to the object?\\
-          \visible<2-> {\color{red}{Euclid other Greek believed so around 300 BC}\footfullcite{BBC:Let there be Light (2006)}}
-        \item
-          \color{black}{or the ``light'' travels from the object to our eyes?}\\
-          \visible<3-> {\color{red}Modern scientists the believe so, and I have no reasons to question them.}
+          \visible<2-> {\color{red}Euclid other Greek philosophers believed so around 300 BC}
+       \item
+         \color{black}{or the ``light'' travels from the object to our eyes?}\\
+         \visible<3-> {\color{red}Modern scientists the believe so.}
       \end{itemize}
     \end{column}
-    \begin{column}{0.25\textwidth}
-        \includegraphics[width=\textwidth]{media/lghtmisc2.png}
+    \hspace{-2cm}
+    \begin{column}{0.3\textwidth}
+      \centering
+        \includegraphics[width=1.4\textwidth]{media/lghtmisc2.pdf}
     \end{column}
   \end{columns}
 \end{frame}
@@ -156,51 +190,58 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
+\end{frame}
+
 \begin{frame}{Pinhole camera is ready to use}
   \centering
   \includegraphics{media/upside_down_vase.png}
 \end{frame}
 
-\section{How does it works}
-
+\section{How does it work}
 \begin{frame}{Ray diagram}
-  \includegraphics[width=\textwidth]{media/pinhole.png}
+  \begin{tikzpicture}[scale=0.8]
+    \node [anchor=south west] (img) at (0,0) {\includegraphics[width=0.8\textwidth]{media/pinhole.png}};
+    \begin{scope}[x={(img.south east)},y={(img.north west)}]
+      \fill [yellow] (0.75,1.2) node (sun) {} ellipse (0.06 and 0.08);
+\coordinate (tree) at (0.2,0.7);
+      \foreach \y in {10, 20, 30} 
+      {
+        \draw [very thick,yellow] ($(sun) + (-150+\y:.1)$) -- ($(tree) + (80-2*\y:.3)$) node [inner sep=0] (trays) {};
+	}
+    \end{scope}
+  \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{Guess what happens?}
-  ... if we make the pinhole a little bigger.\\
-  \pause
-  {\color{red} Image becomes brighter but blurred}
+\begin{frame}{Camera Obscura: Camera in a room}
+    \includemedia[label=camera-ina-room,
+      width=\linewidth,height=0.6\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/camera_ina_room.mp4,
+      flashvars={
+        source=media/camera_ina_room.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{\includegraphics{media/camera_ina_room.jpg}}{VPlayer.swf}
 \end{frame}
 
-\begin{frame}{Why?}
-  \includegraphics[width=\textwidth]{media/pinhole_blurred.png}
-\end{frame}
-
-\begin{frame}{Fun fact!!}
-  \begin{center}
-    \includegraphics[width=0.8\textwidth, trim=0 5in 0 0,clip]{media/animalspinhole.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Evolution of eye}
-  \begin{center}
-  \includegraphics[height=0.8\textheight]{media/Diagram_of_eye_evolution.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Guess what happens}
-  ... if we make multiple holes around the pinhole?\\
-  \pause
-  Try it ...\\
-  \pause
-  {\color{red} Did you get multiple images?}
+\begin{frame}{Camera Obscura: Camera in a room}
+  \centering
+  \includegraphics[width=\textwidth]{media/camera_ina_room.jpg}
 \end{frame}
 
 \begin{frame}{Guess what happens}
   ... if you change the distance of the pinhole from the object?
-  \pause
-  Take the camera closer to the object.
+\end{frame}
+
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
+\end{frame}
+
+\begin{frame}{Guess what happens}
+  ... if you change the distance of the pinhole from the object?\\
   \pause
   {\color{red} Does it become bigger?}
 \end{frame}
@@ -255,7 +296,61 @@
   \end{align}
 \end{frame}
 
-\begin{frame}{Recall evolution of eye}
+\begin{frame}{Distance and size of moon.}
+
+  \begin{tikzpicture}
+    \node [inner sep=0] (moonsmall) at (-3,0) {\includegraphics[height=1.5cm]{media/moon.png}};
+    \node [inner sep=0] (moonlarge) at (-6,0) {\includegraphics[height=3.0cm]{media/moon.png}};
+    \node (eye) at (0,0) {\includegraphics[height=1cm]{media/eye-left-viewing.png}};
+    \draw (0,-1) rectangle (1,1);
+    \node [inner sep=0] (moonimg) at (1,0) {\raisebox{\depth}{\scalebox{-1}[-1]{\includegraphics[height=.5cm]{media/moon.png}}}};
+    \draw (moonimg.south) -- (moonlarge.north);
+    \draw (moonimg.north) -- (moonlarge.south);
+  \end{tikzpicture}
+  \pause
+  We CANNOT compute both the distance and size of moon from single image.
+\end{frame}
+\begin{frame}{Guess what happens?}
+  ... if we make the pinhole a little bigger.\\
+\end{frame}
+
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
+\end{frame}
+
+\begin{frame}{Guess what happens?}
+  ... if we make the pinhole a little bigger.\\
+  \pause
+  {\color{red} Image becomes brighter but blurred}
+\end{frame}
+
+\begin{frame}{Why?}
+  \includegraphics[width=\textwidth]{media/pinhole_blurred.png}
+\end{frame}
+
+\begin{frame}{Fun fact!!}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth, trim=0 5in 0 0,clip]{media/animalspinhole.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Guess what happens}
+  ... if we make multiple holes around the pinhole?\\
+\end{frame}
+
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
+\end{frame}
+
+\begin{frame}{Guess what happens}
+  ... if we make multiple holes around the pinhole?\\
+  \pause
+  Try it ...\\
+  \pause
+  {\color{red} Did you get multiple images?}
+\end{frame}
+
+\begin{frame}{Evolution of eye}
   \begin{center}
   \includegraphics[height=0.8\textheight]{media/Diagram_of_eye_evolution.pdf}
   \end{center}
@@ -308,7 +403,7 @@
   \includegraphics[height=0.8\textheight]{media/convexlens.png}
 \end{frame}
 
-\begin{frame}{Iteractive animation}
+\begin{frame}{Interactive animation}
 
   \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
 

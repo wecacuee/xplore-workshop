@@ -1,0 +1,17 @@
+
+  \begin{tikzpicture}[scale=0.5]
+    \path [use as bounding box] (-4,0) rectangle (11,13);
+    \node [anchor=south](tree) at (0,0) {\includegraphics[width=7cm]{media/tree.png}};
+    \node [anchor=south] (boy) at (10,1) {\includegraphics[width=1cm]{media/boy.png}};
+    \coordinate (sun) at (7,12);
+    \visible<2->{
+      \fill [yellow] (sun) circle (1);
+    }
+    \visible<3->{
+      \foreach \y in {10, 20, 30} 
+      {
+        \draw [very thick,yellow] ($(sun) + (-150+\y:1.1)$) -- ($(tree) + (80-2*\y:3)$) node [inner sep=0] (trays) {};
+        \draw[very thick, green] (trays)-- ($(boy)+(0,0.6)$);
+      }
+    }
+  \end{tikzpicture}
