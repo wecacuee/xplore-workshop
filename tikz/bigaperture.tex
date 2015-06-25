@@ -1,0 +1,15 @@
+\usetikzlibrary{calc}
+\begin{tikzpicture}
+\draw [very thick] (-2,-1) rectangle (0,1);
+\fill [white] (-0.1,-0.2) rectangle (0.1,0.2);
+\node [inner sep=-10] (tree) at (4,0) {\includegraphics[height=4cm]{media/tree.png}};
+\node [inner sep=-5](treeimg1) at (-2,0.2) {\raisebox{\depth}{\scalebox{-1}[-1]{\includegraphics[height=2cm]{media/tree.png}}}};
+\draw [very thick] ($(tree.south)+(-.5,0.2)$)-- (treeimg1.north);
+\draw [very thick] ($(tree.north)+(-.5,-0.2)$) -- (treeimg1.south);
+
+
+\node [inner sep=-5](treeimg2) at (-2,-0.2) {\raisebox{\depth}{\scalebox{-1}[-1]{\includegraphics[height=2cm]{media/tree.png}}}};
+
+\draw [very thick] ($(tree.south)+(-.5,0.2)$) -- (treeimg2.north);
+\draw [very thick] ($(tree.north)+(-.5,-0.2)$) -- (treeimg2.south);
+\end{tikzpicture}
