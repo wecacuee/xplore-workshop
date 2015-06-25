@@ -28,4 +28,18 @@ camera_ina_room.png:
 moon.jpg: 
 	wget http://dreamatico.com/data_images/moon/moon-4.jpg -O $@
 
-convert 
+Animal\ Eyes\ _\ Gresham\ College.mp4:
+	firefox http://video.vzaar.com/vzaar/vze/8a1/target/vze8a1527162304a31a6dc4fe3c38dcd8a.mp4?AWSAccessKeyId=AKIAJ74MFWNVAFH6P7FQ&Expires=1435181684&Signature=sO9jwGSOGndkVuHlPQ7Mnr7Tydk%3D&ren=0&ts=20150624203440&sig=5c8bf2efc22dd7504d76d0de585b48c5&ec_seek=0
+
+pinhole-eyes.mp4: Animal\ Eyes\ _\ Gresham\ College.mp4
+	avconv -i "$^" -ss 00:24:45.0 -c:a copy -t 00:00:35 $@
+
+chambered-nautilus.mp4:
+	youtube-dl https://www.youtube.com/watch?v=QMFqV4SJLWg -o $@
+
+chambered-nautilus-accident.mp4: chambered-nautilus.mp4
+	avconv -i "$^" -ss 00:00:39.0 -c:a copy -t 00:00:10 $@
+
+chambered-nautilus-accident.jpg:
+	wget https://upload.wikimedia.org/wikipedia/commons/a/ad/Nautilus-JB-01.jpg?download -O $@
+	convert $@ -scale 25% $@

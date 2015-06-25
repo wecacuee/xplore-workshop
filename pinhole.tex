@@ -24,6 +24,7 @@
   \tableofcontents
 \end{frame}
 
+\section{Modern Cameras}
 \begin{frame}{Modern cameras}
     \includemedia[label=high-fps-camera,
       width=\linewidth,height=0.5\linewidth, % 16:9
@@ -79,9 +80,6 @@
   \input{tikz/suntreeboy.tex}
 \end{frame}
 
-%\begin{frame}[fragile]{Scientific method}
-%  \input{tikz/scientificmethod.tex}
-%\end{frame}
 
 \begin{frame}{How do we see things?}
   \begin{columns}
@@ -194,7 +192,7 @@
   \input{tikz/scientificmethod.tex}
 \end{frame}
 
-\begin{frame}{Pinhole camera is ready to use}
+\begin{frame}{Did you see an inverted image?}
   \centering
   \includegraphics{media/upside_down_vase.png}
 \end{frame}
@@ -232,6 +230,7 @@
   \includegraphics[width=\textwidth]{media/camera_ina_room.jpg}
 \end{frame}
 
+\section{Effect of distance}
 \begin{frame}{Guess what happens}
   ... if you change the distance of the pinhole from the object?
 \end{frame}
@@ -308,8 +307,11 @@
     \draw (moonimg.north) -- (moonlarge.south);
   \end{tikzpicture}
   \pause
+  \\
   We CANNOT compute both the distance and size of moon from single image.
 \end{frame}
+
+\section{Effect of Aperture size}
 \begin{frame}{Guess what happens?}
   ... if we make the pinhole a little bigger.\\
 \end{frame}
@@ -325,7 +327,8 @@
 \end{frame}
 
 \begin{frame}{Why?}
-  \includegraphics[width=\textwidth]{media/pinhole_blurred.png}
+  \input{media/smallaperture.tex}\\
+  \input{media/bigaperture.tex}
 \end{frame}
 
 \begin{frame}{Fun fact!!}
@@ -333,7 +336,22 @@
     \includegraphics[width=0.8\textwidth, trim=0 5in 0 0,clip]{media/animalspinhole.pdf}
   \end{center}
 \end{frame}
+\begin{frame}
+  \begin{center}
+    \includemedia[label=chambered-nautilus-accident,
+      width=\linewidth,height=0.6\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/chambered-nautilus-accident.mp4,
+      flashvars={
+        source=media/chambered-nautilus-accident.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{\includegraphics{media/chambered-nautilus-accident.jpg}}{VPlayer.swf}
+  \end{center}
+\end{frame}
 
+\section{Number of Apertures}
 \begin{frame}{Guess what happens}
   ... if we make multiple holes around the pinhole?\\
 \end{frame}
@@ -345,19 +363,38 @@
 \begin{frame}{Guess what happens}
   ... if we make multiple holes around the pinhole?\\
   \pause
-  Try it ...\\
-  \pause
   {\color{red} Did you get multiple images?}
 \end{frame}
 
 \begin{frame}{Evolution of eye}
+
+                \newcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 1.0) -- (1,1) -- (1,0) -- cycle;}
+    \only<2->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
+    \only<3->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
+    \only<4->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
+    \only<5->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
+    \only<6->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.00) -- (1,0.00) -- (1,0) -- cycle;}}
   \begin{center}
-  \includegraphics[height=0.8\textheight]{media/Diagram_of_eye_evolution.pdf}
+
+    \begin{tikzpicture}
+      \node [anchor=south west,inner sep=0](img) at (0,0) {\includegraphics[height=0.8\textheight]{media/Diagram_of_eye_evolution.pdf}};
+      \begin{scope}[x={(img.south east)},y={(img.north west)}]
+        \overlayhide
+      \end{scope}
+    \end{tikzpicture}
   \end{center}
 \end{frame}
 
 \begin{frame}{Introducing lens}
-  Add the lens in front of multiple pinholes?\\
+  We want to find out a lens that will make our camera better.
+\end{frame}
+
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
+\end{frame}
+
+\begin{frame}{Introducing lens}
+  Add the double convex lens in front of multiple pinholes?\\
   \pause
   Do you see all images merging into one?\\
   What happened?
@@ -397,6 +434,20 @@
 \begin{frame}{Refraction in nature}
   Longer days\\
   \includegraphics[width=\textwidth]{media/sunset.png}
+\end{frame}
+
+\begin{frame}{Refraction}
+  Light bends towards normal when enters a denser medium
+  \begin{center}
+    \begin{tikzpicture}[scale=3.0]
+      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
+      \draw [dashed] (90:1) -- (-90:1);
+      \draw [->,thick] (170:1) -- (0,0);
+      \draw [->,thick] (0,0) -- (-29.84:1);
+      \node at (60:0.5) [anchor=south west] {Air ($\mu_a$)};
+      \node at (-120:0.5) [anchor=north east] {Water ($\mu_w$)};
+    \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Refraction at lens}

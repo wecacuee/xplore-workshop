@@ -1,5 +1,9 @@
 
-  \newcommand{\nodeonecolor}[1]{\if3#1red!20\else none\fi}
+             \newcommand{\textonecolor}[1]{\ifnum2<#1black\else black!50\fi}
+  \only<2>{\renewcommand{\textonecolor}[1]{\ifnum3<##1black\else black!50\fi}}
+  \only<3>{\renewcommand{\textonecolor}[1]{\ifnum4<##1black\else black!50\fi}}
+
+             \newcommand{\nodeonecolor}[1]{\if3#1red!20\else none\fi}
   \only<2>{\renewcommand{\nodeonecolor}[1]{\if4##1red!20\else none\fi}}
   \only<3>{\renewcommand{\nodeonecolor}[1]{\if5##1red!20\else none\fi}}
   \begin{center}
@@ -11,7 +15,7 @@
 
       \foreach \s/\t in {1/Purpose,2/Research,3/Hypothesis,4/Experiment,5/Analysis,6/Conclusion}
       {
-        \node[fill=\nodeonecolor{\s},circle,minimum width=3] at ({360/\n * (\s - 1)}:\radius) {\t};
+        \node[fill=\nodeonecolor{\s},text=\textonecolor{\s},circle,minimum width=3] at ({360/\n * (\s - 1)}:\radius) {\t};
         \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
         arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
       }
