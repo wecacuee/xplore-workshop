@@ -43,3 +43,15 @@ chambered-nautilus-accident.mp4: chambered-nautilus.mp4
 chambered-nautilus-accident.jpg:
 	wget https://upload.wikimedia.org/wikipedia/commons/a/ad/Nautilus-JB-01.jpg?download -O $@
 	convert $@ -scale 25% $@
+
+history-of-photography-full.mp4:
+	youtube-dl https://www.youtube.com/watch?v=rsYzSZlzC4Y -o $@
+
+history-of-photography.mp4: history-of-photography-full.mp4
+	avconv -i "$^" -ss 00:00:00.0 -c:a copy -t 00:01:34 $@
+
+how-film-cameras-work.mp4: 
+	youtube-dl https://www.youtube.com/watch?v=ws0Gam6m6bQ -o $@
+
+how-digital-cameras-work.mp4:
+	youtube-dl https://www.youtube.com/watch?v=HEVEGVV4EHk -o $@

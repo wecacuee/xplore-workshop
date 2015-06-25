@@ -19,10 +19,10 @@
 
 \begin{document}
 \maketitle
-\begin{frame}{Contents}
-  % This slide will be removed later
-  \tableofcontents
-\end{frame}
+%\begin{frame}{Contents}
+%  % This slide will be removed later
+%  \tableofcontents
+%\end{frame}
 
 \section{Modern Cameras}
 \begin{frame}{Modern cameras}
@@ -448,6 +448,7 @@
   \input{tikz/scientificmethod.tex}
 \end{frame}
 
+\section{Lenses}
 \begin{frame}{Introducing lens}
   Add the double convex lens in front of multiple pinholes?\\
   \pause
@@ -644,6 +645,35 @@
   \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
 \end{frame}
 
-\begin{frame}
+\newcommand{\includevideo}[1]{
+    \includemedia[label=#1,
+      width=\linewidth,height=0.6\linewidth, % 16:9
+      activate=pageopen,
+      addresource=media/#1.mp4,
+      flashvars={
+        source=media/#1.mp4
+        &loop=false             % loop video
+        &scaleMode=letterbox   % preserve aspect ratio while scaling the video
+      }
+    ]{}{VPlayer.swf}
+}
+\begin{frame}{History of Photography}
+  \includevideo{history-of-photography}
+\end{frame}
+
+\begin{frame}{Film cameras}
+  \includevideo{how-film-cameras-work}
+\end{frame}
+
+\begin{frame}{Digital cameras}
+  \includevideo{how-digital-cameras-work}
+\end{frame}
+
+\begin{frame}{Questions to think about}
+  \begin{itemize}
+    \item What is colored light?
+    \item Why do we see things in color?
+    \item How is rainbow formed?
+  \end{itemize}
 \end{frame}
 \end{document}
