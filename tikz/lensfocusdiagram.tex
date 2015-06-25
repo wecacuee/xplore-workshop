@@ -1,0 +1,49 @@
+\usetikzlibrary{calc,intersections}
+\begin{tikzpicture} 
+\def\r{6}
+\coordinate (fp) at (-5.0,0);
+
+
+\begin{scope} 
+\clip (0,-4) rectangle (2,4);
+\draw [fill=cyan!20,name path=lensright,very thick] (fp) circle (\r);
+\end{scope}
+
+\draw [name path=normrightup,thick,dash pattern=on \pgflinewidth off 2pt]($(fp)+(20:0.9*\r)$) -- ($(fp)+ (20:1.1*\r)$);
+\draw [name path=normrightdown,thick,dash pattern=on \pgflinewidth off 2pt]($(fp)+(-20:0.9*\r)$) -- ($(fp)+ (-20:1.1*\r)$);
+
+\begin{scope} 
+\clip (0,-4) rectangle (-2,4);
+\draw  [fill=cyan!20,name path=lensleft,very thick] ($-1*(fp)$) circle (\r);
+\end{scope}
+
+\draw [name path=normleftdown,thick,dash pattern=on \pgflinewidth off 2pt]($-1*(fp)+(24:-0.9*\r)$) -- ($-1*(fp)+ (24:-1.1*\r)$);
+\draw [name path=normleftup,thick,dash pattern=on \pgflinewidth off 2pt]($-1*(fp)+(-24:-0.9*\r)$) -- ($-1*(fp)+ (-24:-1.1*\r)$);
+
+
+
+  \path [name intersections={of = lensleft and normleftup}];
+  \coordinate (A)  at (intersection-1);
+  \draw [thick,<-,stealth-] (A) -- ($(A) + (-3,0)$);
+
+  \path [name intersections={of = lensleft and normleftdown}];
+  \coordinate (B)  at (intersection-1);
+  \draw [thick,stealth-] (B) -- ($(B) + (-3,0)$);
+
+  \path [name intersections={of = lensright and normrightup}];
+  \coordinate (Ar)  at (intersection-1);
+  \draw [thick,-stealth] (A) -- (Ar);
+
+  \path [name intersections={of = lensright and normrightdown}];
+  \coordinate (Br)  at (intersection-1);
+  \draw [thick,<-,stealth-] (Br) -- (B);
+
+\draw [thick,-stealth] (Br) -- ($-0.5*(fp)$);
+\draw [thick,-stealth] (Ar) -- ($-0.5*(fp)$);
+
+\node [anchor=north west]at ($-0.5*(fp)$) {Focal Point};
+
+\draw ($-1*(fp)$) -- (fp);
+
+\end{tikzpicture}
+

@@ -193,8 +193,9 @@
 \end{frame}
 
 \begin{frame}{Did you see an inverted image?}
-  \centering
-  \includegraphics{media/upside_down_vase.png}
+  \begin{center}
+    \includegraphics{media/upside_down_vase.png}
+  \end{center}
 \end{frame}
 
 \section{How does it work}
@@ -253,6 +254,52 @@
   \includegraphics[width=\textwidth]{media/tri-similar1.png}
 \end{frame}
 
+\begin{frame}{Similar triangles}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{tikzpicture}
+        \def\la{A}
+        \def\lb{B}
+        \def\lc{C}
+        \def\triangle{
+        (0,0) node[anchor=north east] {\la} -- (1,2) node[anchor=south east] {\lb}-- (2,1) node [anchor=north west] {\lc} -- cycle;}
+        \def\triangleanglearcs{
+          \begin{scope}
+            \clip \triangle;
+            \draw [anglearcs] (0,0) circle (0.2);
+            \draw [anglearcs] (1,2) circle (0.2);
+            \draw [anglearcs] (1,2) circle (0.24);
+            \draw [anglearcs] (2,1) circle (0.20);
+            \draw [anglearcs] (2,1) circle (0.24);
+            \draw [anglearcs] (2,1) circle (0.28);
+          \end{scope}
+        }
+        \begin{scope}[anglearcs/.style={blue}]
+          \draw [blue] \triangle;
+          \triangleanglearcs
+        \end{scope}
+        \def\la{P}
+        \def\lb{Q}
+        \def\lc{R}
+        \begin{scope}[rotate=30,shift={(3,-2)},scale=1.5,anglearcs/.style={red}]
+          \draw [red] \triangle;
+          \triangleanglearcs
+        \end{scope}
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.5\textwidth}   
+      \begin{align*}
+        &\angle ABC = \angle PQR \\
+        &\land \angle BCA = \angle QRP \\
+        &\iff \bigtriangleup ABC \sim \bigtriangleup PQR \\
+        &\iff \frac{AB}{PQ} = \frac{BC}{QR} = \frac{CA}{RP}
+      \end{align*}
+    \end{column}
+  \end{columns}
+
+  
+\end{frame}
+
 \begin{frame}{Geometry of pinhole camera}
   \begin{tikzpicture}
     \draw (-4,-1) rectangle (0, 1);
@@ -266,18 +313,26 @@
 
     \draw [thick,blue] (imga) -- (obja);
     \draw [thick,blue] (imgb) -- (objb);
-    
-    \draw [red] let 
-    \p1 = ($ 0.2*(imga) $),
-    \n1 = {atan2(-\x1, -\y1)} 
-    in (\x1,\y1) arc (\n1:0:\x1);
 
-    \draw [red] let 
-    \p1 = ($ 0.2*(obja) $),
-    \n1 = {atan2(\x1, \y1)} 
-    in (\x1,\y1) arc (\n1:0:\x1);
+    \coordinate (imgc) at ($0.5*(imga)+0.5*(imgb)$);
+    \coordinate (objc) at ($0.5*(obja)+0.5*(objb)$);
+    \draw [thick,blue,dashed]  (imgc) node [text=black,anchor=east]  {$C'$} -- (objc) node [text=black,anchor=west]  {$C$};
 
-    \draw [thick,blue,dashed] ($0.5*(imga)+0.5*(imgb)$) node [text=black,anchor=east] {$C'$} -- ($0.5*(obja)+0.5*(objb)$) node [text=black,anchor=west] {$C$};
+    % Angle arc towards image
+    \begin{scope}
+      \clip (imga) -- (origin) -- (imgc) -- cycle;
+      \draw [red] (origin) circle (0.8);
+    \end{scope}
+
+    % Angle arc towards object
+    \begin{scope}
+      \clip (obja) -- (origin) -- (objc) -- cycle;
+      \draw [red] (origin) circle (0.8);
+    \end{scope}
+
+    \draw [red] ($(imgc) + (0.2, 0)$) -- ($(imgc) + (0.2, -0.2)$) -- ($(imgc) + (0.0, -0.2)$);
+
+    \draw [red] ($(objc) + (-0.2, 0)$) -- ($(objc) + (-0.2, 0.2)$) -- ($(objc) + (0.0, 0.2)$);
   \end{tikzpicture}
   \centering
   \begin{align}
@@ -368,12 +423,12 @@
 
 \begin{frame}{Evolution of eye}
 
-                \newcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 1.0) -- (1,1) -- (1,0) -- cycle;}
-    \only<2->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
-    \only<3->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
-    \only<4->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
-    \only<5->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
-    \only<6->{\renewcommand{\overlayhide}{\fill [white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.00) -- (1,0.00) -- (1,0) -- cycle;}}
+                \newcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 1.0) -- (1,1) -- (1,0) -- cycle;}
+    \only<2->{\renewcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.65) --(0.55,0.65) --  (0.55, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
+    \only<3->{\renewcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.65) -- (1,0.65) -- (1,0) -- cycle;}}
+    \only<4->{\renewcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.33) --(0.50,0.33) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
+    \only<5->{\renewcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.33) -- (1,0.33) -- (1,0) -- cycle;}}
+    \only<6->{\renewcommand{\overlayhide}{\fill [rounded corners,white,opacity=0.8] (0,0) -- (0,0.00) --(0.50,0.00) --  (0.50, 0.00) -- (1,0.00) -- (1,0) -- cycle;}}
   \begin{center}
 
     \begin{tikzpicture}
@@ -427,12 +482,10 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{Refraction in nature}
-  Twinkling starts\\
+\begin{frame}{Refraction in nature: Twinkling stars}
   \includegraphics[width=\textwidth]{media/twinkle.jpg}
 \end{frame}
-\begin{frame}{Refraction in nature}
-  Longer days\\
+\begin{frame}{Refraction in nature: Longer days}
   \includegraphics[width=\textwidth]{media/sunset.png}
 \end{frame}
 
@@ -462,13 +515,135 @@
   \end{center}
 \end{frame}
 
+\begin{frame}[fragile]{Snell's law}
+  \begin{center}
+    \begin{tikzpicture}[scale=3.0]
+      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
+      \foreach \s/\c in {0/black,1/red,2/blue, 3/cyan, 4/orange, 5/green} 
+      {
+        \pgfmathsetmacro{\aw}{asin(sin(15*\s)/1.33)}
+
+        \draw [->,thick,\c] (90+15*\s:1) -- (0,0) -- ({-90+\aw}:1);
+      }
+      \node at (60:0.5) [anchor=south west] {Air};
+      \node at (-120:0.5) [anchor=north east] {Water};
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
 \begin{frame}{Refraction at lens}
-  \includegraphics[height=0.8\textheight]{media/convexlens.png}
+  \begin{tikzpicture} 
+    \def\r{6}
+    \coordinate (fp) at (-5.0,0);
+
+
+    \begin{scope} 
+      \clip (0,-4) rectangle (2,4);
+      \draw [fill=cyan!20,name path=lensright,very thick] (fp) circle (\r);
+    \end{scope}
+
+    \draw [name path=normrightup,thick,dash pattern=on \pgflinewidth off 2pt]($(fp)+(20:0.9*\r)$) -- ($(fp)+ (20:1.1*\r)$);
+    \draw [name path=normrightdown,thick,dash pattern=on \pgflinewidth off 2pt]($(fp)+(-20:0.9*\r)$) -- ($(fp)+ (-20:1.1*\r)$);
+
+    \begin{scope} 
+      \clip (0,-4) rectangle (-2,4);
+      \draw  [fill=cyan!20,name path=lensleft,very thick] ($-1*(fp)$) circle (\r);
+    \end{scope}
+
+    \draw [name path=normleftdown,thick,dash pattern=on \pgflinewidth off 2pt]($-1*(fp)+(24:-0.9*\r)$) -- ($-1*(fp)+ (24:-1.1*\r)$);
+    \draw [name path=normleftup,thick,dash pattern=on \pgflinewidth off 2pt]($-1*(fp)+(-24:-0.9*\r)$) -- ($-1*(fp)+ (-24:-1.1*\r)$);
+
+    \draw ($-1*(fp)$) -- (fp);
+
+    \path [name intersections={of = lensleft and normleftup}];
+    \coordinate (A)  at (intersection-1);
+    \draw [thick,<-,stealth-] (A) -- ($(A) + (-3,0)$);
+
+    \path [name intersections={of = lensleft and normleftdown}];
+    \coordinate (B)  at (intersection-1);
+    \draw [thick,stealth-] (B) -- ($(B) + (-3,0)$);
+
+    \pause
+    \path [name intersections={of = lensright and normrightup}];
+    \coordinate (Ar)  at (intersection-1);
+    \draw [thick,-stealth] (A) -- (Ar);
+
+    \path [name intersections={of = lensright and normrightdown}];
+    \coordinate (Br)  at (intersection-1);
+    \draw [thick,<-,stealth-] (Br) -- (B);
+
+    \pause
+    \draw [thick,-stealth] (Br) -- ($-0.5*(fp)$);
+    \draw [thick,-stealth] (Ar) -- ($-0.5*(fp)$);
+
+    \fill ($-0.5*(fp)$) circle (0.1); 
+    \node [anchor=north west]at ($-0.5*(fp)$) {Focal Point};
+
+    \pause
+    \node [anchor=north east]at ($0.5*(fp)$) {Principal Axis};
+
+    \pause
+    \fill (0,0) circle (0.1); 
+    \node [anchor=south west] at (0,0) {Optical Center};
+
+
+  \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Rules by which you can draw ray diagrams}
+  \begin{itemize}
+    \item Rays parallel to Principal axis converge to the focal point.
+    \item Rays passing through optical center do not change direction.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+  \begin{tikzpicture}[scale=0.75]
+    \def\r{6}
+    \coordinate (fp) at (-5.0,0);
+
+
+    \begin{scope} 
+      \clip (0,-4) rectangle (2,4);
+      \draw [fill=cyan!20,name path=lensright,very thick] (fp) circle (\r);
+    \end{scope}
+
+    \begin{scope} 
+      \clip (0,-4) rectangle (-2,4);
+      \draw  [fill=cyan!20,name path=lensleft,very thick] ($-1*(fp)$) circle (\r);
+    \end{scope}
+
+    \draw [name path=principalaxis]($-1.5*(fp)$) -- ($1.5*(fp)$);
+
+    \coordinate [label={above:Object}] (obj) at ($1.5*(fp)+(0,2)$);
+    \draw [green,very thick,->] ($1.5*(fp)$) -- (obj);
+
+
+
+    \fill ($-0.5*(fp)$) circle (0.1); 
+    \only<-1>{\node [anchor=north west]at ($-0.5*(fp)$) {Focal Point};
+
+      \node [anchor=north east]at ($0.5*(fp)$) {Principal Axis};
+
+    \node [anchor=south west] at (0,0) {Optical Center};}
+    \fill (0,0) circle (0.1); 
+
+    \pause
+    \draw [-stealth] (obj) -- (0,0);
+    \draw [-stealth] (obj) -- (0,2);
+    \pause
+    \draw [name path=ray1] (0,0) -- ($-1.5*(fp)+(0,-2)$);
+    \draw [name path=ray2] (0,2) -- ($-0.5*(fp)$) -- ($-1.8*0.5*(fp)-0.8*(0,2)$);
+    \path [name path=objray,name intersections={of=ray1 and ray2}](intersection-1) -- ($(intersection-1) + (0,2)$);
+    \coordinate (objimg) at (intersection-1);
+    \draw [green,thick,<-,name intersections={of=objray and principalaxis}] (objimg) -- (intersection-1);
+  \end{tikzpicture}
 \end{frame}
 
 \begin{frame}{Interactive animation}
-
   \url{http://www.pbslearningmedia.org/resource/lsps07.sci.phys.energy.geometoptics/geometric-optics/}
+\end{frame}
 
+\begin{frame}
 \end{frame}
 \end{document}
