@@ -13,16 +13,12 @@
 
 \title{Computer Imaging: Build Your Own Camera}
 \date{\today}
-\author{Vikas Dhiman\\ David Johnson\\ Jason J Corso}
+\author{Vikas Dhiman\\ David Johnson\\ Madan Raviganesh\\ Jason J Corso}
 \institute{University of Michigan}
 \bibliography{pinhole}
 
 \begin{document}
 \maketitle
-%\begin{frame}{Contents}
-%  % This slide will be removed later
-%  \tableofcontents
-%\end{frame}
 
 \section{Modern Cameras}
 \begin{frame}{Modern cameras}
@@ -52,18 +48,6 @@
 \end{frame}
 
 \section{About Light}
-% Interesting notes/facts/videos about how human eye works.
-% First camera "possibly" developed by ancient greeks and ancient Chinese.
-% First documented description of a camera dates back to 1021 AD by a Arab physicist Ibn al-Haytham in his "Book of optics"
-%%
-%% How do you think our eyes work?
-%% 
-%% 
-%% or 
-%% 
-%% 
-% Rhetoric questions? Get kids involved
-% What do kids think, how does eye/camera work?
 \begin{frame}{How do we see things?}
   \input{tikz/suntreeboy.tex}
 \end{frame}
@@ -88,12 +72,6 @@
     \end{column}
   \end{columns}
 \end{frame}
-% \includegraphics[width=\textwidth]{media/Diagram_of_eye_evolution.svg}
-% \footfullcite{}
-
-% \begin{frame}{What does it mean to see things?}
-% 
-% \end{frame}
 
 \begin{frame}{What is light?}
   \begin{columns}
@@ -124,11 +102,10 @@
 \end{frame}
 
 \begin{frame}{What is light?}
-  Light is something that helps us see things. It travels in straight lines (well mostly!!).
+  Light is something that helps us see things. It travels in straight lines (mostly!!).
 \end{frame}
 
 \section{Making a pinhole camera}
-\frame{\tableofcontents[currentsection]}
 \begin{frame}{Step 1}
   \begin{columns}
     \begin{column}{0.4\textwidth}
@@ -176,8 +153,17 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{Scientific method}
-  \input{tikz/scientificmethod.tex}
+\begin{frame}{Using the pinhole camera}
+  \begin{itemize}
+    \item
+      Point the bottom of the cup towards the object and scotch tape towards you.\\
+    \item
+      Hold the cup around one foot away from your eyes.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Experiment time}
+  We will turn on the bulb.
 \end{frame}
 
 \begin{frame}{Did you see an inverted image?}
@@ -352,6 +338,14 @@
   \pause
   \\
   We CANNOT compute both the distance and size of moon from single image.
+\end{frame}
+
+\begin{frame}{Effect of change in screen to aperture}
+  Let's cut the cup along the slit.
+\end{frame}
+
+\begin{frame}[fragile]{Scientific method}
+  \input{tikz/scientificmethod.tex}
 \end{frame}
 
 \section{Effect of Aperture size}
