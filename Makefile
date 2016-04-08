@@ -11,6 +11,7 @@ DEPS_DIR = out/deps
 LATEXMK = latexmk -recorder -use-make -deps
 all : $(TARGETS)
 
+include media.mk
 # Include the dependency makefile produced by latexmk
 # latexmk -deps-out= is used to record the dependencies
 $(foreach file,$(TARGETS),$(eval -include $(DEPS_DIR)/$(notdir file)P))
@@ -24,11 +25,12 @@ $(DEPS_DIR)/.touch:
 	mkdir -p $(dir $@)
 	touch $@
 
-out/%.pdf : %.tex $(DEPS_DIR)/.touch $(OUT_DIR)/.touch out/pinholepreamble.fmt
-	TEXINPUTS=.:$(ROOT_DIR)/mtheme/: $(LATEXMK) -pdf -dvi- -ps- -output-directory=out -pdflatex="xelatex -fmt pinholepreamble.fmt -shell-escape %O %S" -deps-out=$(DEPS_DIR)/$(notdir $@)P $<
+$(OUT_DIR)/%.pdf: %.tex $(DEPS_DIR)/.touch $(OUT_DIR)/.touch out/%preamble.fmt
+	TEXINPUTS=.:$(ROOT_DIR)/mtheme/: $(LATEXMK) -pdf -dvi- -ps- -output-directory=out -pdflatex="xelatex -interaction=nonstopmode -fmt pinholepreamble.fmt -shell-escape %O %S" -deps-out=$(DEPS_DIR)/$(notdir $@)P $<
 
-# Dump presentation preamble as a fmt file
-out/pinholepreamble.fmt: $(OUT_DIR)/.touch pinholepreamble.tex
+# Dump presentation preamble as a fmt file. This is a binary file that is used
+# to contain precompiled latex preambles. This can sufficiently speed
+out/%preamble.fmt: $(OUT_DIR)/.touch %preamble.tex
 	TEXINPUTS=.:$(ROOT_DIR)/mtheme/: xelatex -ini -shell-escape -jobname="pinholepreamble" -output-directory=out "&xelatex pinholepreamble.tex\dump"
 
 clean:

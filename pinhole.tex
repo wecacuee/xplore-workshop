@@ -15,7 +15,6 @@
 \date{\today}
 \author{Vikas Dhiman\\ David Johnson\\ Madan Raviganesh\\ Jason J Corso}
 \institute{University of Michigan}
-\bibliography{pinhole}
 
 \begin{document}
 \maketitle
@@ -88,7 +87,6 @@
 \end{frame}
 
 \begin{frame}{Light travels in straight lines}
-  \footfullcite{BBC:Let there be Light (2006)}
     \includemedia[label=euclid-straight-lines,
       width=\linewidth,height=0.6\linewidth, % 16:9
       activate=pageopen,
@@ -99,6 +97,8 @@
         &scaleMode=letterbox   % preserve aspect ratio while scaling the video
       }
     ]{\includegraphics{media/euclid-straight-lines.png}}{VPlayer.swf}
+    \footnotemark
+  \footnotetext{BBC:Let there be Light (2006)}
 \end{frame}
 
 \begin{frame}{What is light?}
@@ -658,4 +658,8 @@
     \item How is rainbow formed?
   \end{itemize}
 \end{frame}
+\nocite{bbc2006light}
+\nocite{wilk2008eye}
+\bibliography{pinhole}
+\bibliographystyle{plain}
 \end{document}
