@@ -15,12 +15,14 @@
 \date{\today}
 \author{Vikas Dhiman\\ David Johnson\\ Madan Raviganesh\\ Jason J Corso}
 \institute{University of Michigan}
+\providecommand{\hl}[1]{{\color{red}{#1}}}
 
 \begin{document}
 \maketitle
 
 \section{Modern Cameras}
 \begin{frame}{Modern cameras}
+  \hl{Should refrain from having bullet examples. Find some non-violent examples.}
     \includemedia[label=high-fps-camera,
       width=\linewidth,height=0.5\linewidth, % 16:9
       activate=pageopen,
@@ -32,6 +34,12 @@
       }
     ]{\includegraphics[width=\textwidth]{media/bullet-time.png}}{VPlayer.swf}
 \end{frame}
+
+\note{
+  \hl{These notes can be disabled by removing notes option in the file pinholepreamble.tex}
+
+  {Purpose: convey that modern cameras are powerful and complicated but the basic underlying principles remain the same.}
+}
 
 \begin{frame}{Modern cameras}
     \includemedia[label=matrix-bullet-time-shot,
@@ -51,17 +59,16 @@
   \input{tikz/suntreeboy.tex}
 \end{frame}
 
-
 \begin{frame}{How do we see things?}
   \begin{columns}
     \begin{column}{0.7\textwidth}
       \begin{itemize}
         \item
           Does the ``sight'' travel from our eyes to the object?\\
-          \visible<2-> {\color{red}Euclid other Greek philosophers believed so around 300 BC}
+          \visible<2-> {\color{red}Euclid and other Greek philosophers believed so around 300 BC}
        \item
          \color{black}{or the ``light'' travels from the object to our eyes?}\\
-         \visible<3-> {\color{red}Modern scientists the believe so.}
+         \visible<3-> {\color{red}Modern scientists still believe so.}
       \end{itemize}
     \end{column}
     \hspace{-2cm}
@@ -107,6 +114,7 @@
 
 \section{Making a pinhole camera}
 \begin{frame}{Step 1}
+  \hl{Put a picture of cup without tape}
   \begin{columns}
     \begin{column}{0.4\textwidth}
       Take a cup and scotch tape
@@ -131,6 +139,7 @@
 \end{frame}
 
 \begin{frame}{Step 3}
+  \hl{Put a picture of cup without push pin}
   \begin{columns}
     \begin{column}{0.6\textwidth}
       Cut a circular piece of construction paper to reinforce the cup base.
@@ -143,6 +152,7 @@
 \end{frame}
 
 \begin{frame}{Step 4}
+  \hl{Put a picture of cup without push pin but with a hole}
   \begin{columns}
     \begin{column}{0.6\textwidth}
       Pierce a pinhole through the closed end of the cup using a push pin
@@ -154,6 +164,7 @@
 \end{frame}
 
 \begin{frame}{Using the pinhole camera}
+  \hl{Show a picture of how to use the camera}
   \begin{itemize}
     \item
       Point the bottom of the cup towards the object and scotch tape towards you.\\
@@ -164,6 +175,14 @@
 
 \begin{frame}{Experiment time}
   We will turn on the bulb.
+\end{frame}
+
+\begin{frame}
+  \addtooverlay<1->{%
+    \draw[fill=black,opacity=1.00] 
+    (current page.north east) rectangle (current page.south west);
+    \node at (current page.center) {\includegraphics[height=\textheight]{media/tree.png}};
+  }
 \end{frame}
 
 \begin{frame}{Did you see an inverted image?}
@@ -210,7 +229,7 @@
   ... if you change the distance of the pinhole from the object?
 \end{frame}
 
-\begin{frame}[fragile]{Scientific method}
+\begin{frame}[fragile]{Effect of distance}
   \input{tikz/scientificmethod.tex}
 \end{frame}
 
@@ -228,6 +247,7 @@
   \includegraphics[width=\textwidth]{media/tri-similar1.png}
 \end{frame}
 
+\begin{comment}
 \begin{frame}{Similar triangles}
   \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -270,8 +290,6 @@
       \end{align*}
     \end{column}
   \end{columns}
-
-  
 \end{frame}
 
 \begin{frame}{Geometry of pinhole camera}
@@ -315,6 +333,8 @@
   \end{align}
 \end{frame}
 
+\begin{comment} % Too complicated
+  
 \begin{frame}{Exercise}
 
   Can we compute the distance of object?\\
@@ -323,6 +343,8 @@
     \text{Distance of object} = \frac{\text{Size of object}}{\text{Size of image}} \times \text{Distance of screen}
   \end{align}
 \end{frame}
+
+\end{comment}
 
 \begin{frame}{Distance and size of moon.}
 
@@ -340,8 +362,11 @@
   We CANNOT compute both the distance and size of moon from single image.
 \end{frame}
 
-\begin{frame}{Effect of change in screen to aperture}
-  Let's cut the cup along the slit.
+\begin{frame}{Effect of changing screen-aperture distance}
+  We will now study effect of changing screen-aperture distance on the image.
+
+  Let's cut the cup along the slit.\\
+  \hl{Include a picture for instructions}
 \end{frame}
 
 \begin{frame}[fragile]{Scientific method}
@@ -351,6 +376,7 @@
 \section{Effect of Aperture size}
 \begin{frame}{Guess what happens?}
   ... if we make the pinhole a little bigger.\\
+  \hl{Include an image to show how big of a hole}
 \end{frame}
 
 \begin{frame}[fragile]{Scientific method}
@@ -361,6 +387,7 @@
   ... if we make the pinhole a little bigger.\\
   \pause
   {\color{red} Image becomes brighter but blurred}
+  {\color{red} Some may observe "clearer" because of brightness}
 \end{frame}
 
 \begin{frame}{Why?}
@@ -391,6 +418,7 @@
 \section{Number of Apertures}
 \begin{frame}{Guess what happens}
   ... if we make multiple holes around the pinhole?\\
+  \hl{Include a picture of how many holes}
 \end{frame}
 
 \begin{frame}[fragile]{Scientific method}
@@ -424,7 +452,10 @@
 
 \begin{frame}{Introducing lens}
   We want to find out a lens that will make our camera better.
+  \hl{Include a picture of holding lens (not the right one) with the pinhole camera}
 \end{frame}
+
+\note{We give a bunch of lenses to the kids and let them figure out the right lens}
 
 \begin{frame}[fragile]{Scientific method}
   \input{tikz/scientificmethod.tex}
@@ -472,6 +503,7 @@
   \includegraphics[width=\textwidth]{media/sunset.png}
 \end{frame}
 
+\begin{comment} % Too complicated
 \begin{frame}{Snell's law}
   \begin{center}
     \begin{tikzpicture}[scale=3.0]
@@ -497,6 +529,7 @@
     \end{align*}
   \end{center}
 \end{frame}
+\end{comment}
 
 \begin{frame}[fragile]{Snell's law}
   \begin{center}
@@ -639,6 +672,8 @@
       }
     ]{}{VPlayer.swf}
 }
+
+\begin{comment} % Not required
 \begin{frame}{History of Photography}
   \includevideo{history-of-photography}
 \end{frame}
@@ -650,6 +685,7 @@
 \begin{frame}{Digital cameras}
   \includevideo{how-digital-cameras-work}
 \end{frame}
+\end{comment}
 
 \begin{frame}{Questions to think about}
   \begin{itemize}
@@ -658,8 +694,10 @@
     \item How is rainbow formed?
   \end{itemize}
 \end{frame}
+\begin{frame}{Sources}
 \nocite{bbc2006light}
 \nocite{wilk2008eye}
 \bibliography{pinhole}
+\end{frame}
 \bibliographystyle{plain}
 \end{document}

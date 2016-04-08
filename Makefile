@@ -8,9 +8,12 @@ ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 OUT_DIR = out
 DEPS_DIR = out/deps
+# latexmk can automatically extract dependencies (like images) and create a
+# makefile with those dependencies. We save it as $(DEPS_DIR)/$(root).pdfP
 LATEXMK = latexmk -recorder -use-make -deps
 all : $(TARGETS)
 
+# Some intermediate processing of media files
 include media.mk
 # Include the dependency makefile produced by latexmk
 # latexmk -deps-out= is used to record the dependencies

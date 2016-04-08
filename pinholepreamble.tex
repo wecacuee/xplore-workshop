@@ -1,4 +1,6 @@
-\documentclass[10pt, compress]{beamer}
+\documentclass[notes,10pt, compress]{beamer} % frames + notes
+%\documentclass[notes=only,10pt, compress]{beamer} % only notes
+%\documentclass[10pt, compress]{beamer} % only frames
 \usetheme{m}
  
  \usepackage{booktabs} % for better tables
@@ -7,9 +9,43 @@
  \usepackage{hyperref} % for links
  \usepackage{cutwin} % text wrapped around figures
  \usepackage{ifthen}
+ \usepackage{verbatim} % for \begin{comment} \end{comment}
  
 \usepackage{tikz}
 \usetikzlibrary{shadows,trees}
 \usetikzlibrary{shapes,calc,backgrounds}
 \usetikzlibrary{intersections}
 \usepgfplotslibrary{dateplot}
+
+
+%%
+% Change beamer theme for single slide, single overlay
+% http://tex.stackexchange.com/questions/45420/overlay-an-entire-slide-with-a-semitransparent-rectangle-in-beamer
+%% 
+\makeatletter
+\def\ft@overlay{}
+
+\addtobeamertemplate{footline}{}%
+{%
+  \lineskiplimit0pt
+  \begin{tikzpicture}[remember picture,overlay]%
+  \ft@overlay
+  \end{tikzpicture}%
+  \gdef\ft@overlay{}%
+}
+
+\newcommand<>{\addtooverlay}[1]{%
+  \only#2{%
+  \expandafter\gdef\expandafter\ft@overlay\expandafter{\ft@overlay #1}%
+  }%
+}
+
+\makeatother
+\newcommand<>{\TheTree}{
+   \addtooverlay<#1>{%
+     \draw[fill=black,opacity=1.00] 
+     (current page.north east) rectangle (current page.south west);
+     \node at (current page.center) {\includegraphics[height=\textheight]{media/tree.png}};
+   }
+}
+

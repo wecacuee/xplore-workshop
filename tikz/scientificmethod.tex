@@ -1,11 +1,11 @@
 
              \newcommand{\textonecolor}[1]{\ifnum2<#1black\else black!50\fi}
   \only<2>{\renewcommand{\textonecolor}[1]{\ifnum3<##1black\else black!50\fi}}
-  \only<3>{\renewcommand{\textonecolor}[1]{\ifnum4<##1black\else black!50\fi}}
+  \only<4>{\renewcommand{\textonecolor}[1]{\ifnum4<##1black\else black!50\fi}}
 
              \newcommand{\nodeonecolor}[1]{\if3#1red!20\else none\fi}
   \only<2>{\renewcommand{\nodeonecolor}[1]{\if4##1red!20\else none\fi}}
-  \only<3>{\renewcommand{\nodeonecolor}[1]{\if5##1red!20\else none\fi}}
+  \only<4>{\renewcommand{\nodeonecolor}[1]{\if5##1red!20\else none\fi}}
   \begin{center}
     \begin{tikzpicture}[]
 
@@ -20,4 +20,9 @@
         arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
       }
     \end{tikzpicture}
+    \addtooverlay<.(3)>{%
+      \draw[fill=black,opacity=1.00] 
+      (current page.north east) rectangle (current page.south west);
+      \node at (current page.center) {\includegraphics[height=\textheight]{media/tree.png}};
+    }
   \end{center}
