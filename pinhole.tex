@@ -540,57 +540,6 @@ This is because of increased brightness. Especially when you are observing the t
   \end{center}
 \end{frame}
 
-\begin{frame}{Refraction in nature: Twinkling stars}
-  \includegraphics[width=\textwidth]{media/twinkle.jpg}
-\end{frame}
-\begin{frame}{Refraction in nature: Longer days}
-  \includegraphics[width=\textwidth]{media/sunset.png}
-\end{frame}
-
-\begin{comment} % Too complicated
-\begin{frame}{Snell's law}
-  \begin{center}
-    \begin{tikzpicture}[scale=3.0]
-      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
-      \draw [dashed] (90:1) -- (-90:1);
-      \draw [->,thick] (170:1) -- (0,0);
-      \draw [->,thick] (0,0) -- (-29.84:1);
-      \node at (60:0.5) [anchor=south west] {Air ($\mu_a$)};
-      \node at (-120:0.5) [anchor=north east] {Water ($\mu_w$)};
-      \begin{scope}
-        \clip (0,0) -- (-29.84:1) -- (-90:1) -- cycle;
-        \draw [red] (0,0) circle (0.2);
-        \node at (-60:0.3) {$\theta_w$};
-      \end{scope}
-      \begin{scope}
-        \clip (0,0) -- (170:1) -- (90:1) -- cycle;
-        \draw [red] (0,0) circle (0.2);
-        \node at (135:0.3) {$\theta_a$};
-      \end{scope}
-    \end{tikzpicture}
-    \begin{align*}
-      \frac{\sin \theta_a }{\sin \theta_w} &= \frac{\mu_w }{\mu_a}
-    \end{align*}
-  \end{center}
-\end{frame}
-\end{comment}
-
-\begin{frame}[fragile]{Snell's law}
-  \begin{center}
-    \begin{tikzpicture}[scale=3.0]
-      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
-      \foreach \s/\c in {0/black,1/red,2/blue, 3/cyan, 4/orange, 5/green} 
-      {
-        \pgfmathsetmacro{\aw}{asin(sin(15*\s)/1.33)}
-
-        \draw [->,thick,\c] (90+15*\s:1) -- (0,0) -- ({-90+\aw}:1);
-      }
-      \node at (60:0.5) [anchor=south west] {Air};
-      \node at (-120:0.5) [anchor=north east] {Water};
-    \end{tikzpicture}
-  \end{center}
-\end{frame}
-
 \begin{frame}{Refraction at lens}
   \begin{tikzpicture} 
     \def\r{6}
@@ -648,6 +597,63 @@ This is because of increased brightness. Especially when you are observing the t
 
 
   \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \hspace{-1.0cm}\includegraphics[width=1.0\textwidth]{media/computer_imaging_montage.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Refraction in nature: Twinkling stars}
+  \includegraphics[width=\textwidth]{media/twinkle.jpg}
+\end{frame}
+\begin{frame}{Refraction in nature: Longer days}
+  \includegraphics[width=\textwidth]{media/sunset.png}
+\end{frame}
+
+\begin{comment} % Too complicated
+\begin{frame}{Snell's law}
+  \begin{center}
+    \begin{tikzpicture}[scale=3.0]
+      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
+      \draw [dashed] (90:1) -- (-90:1);
+      \draw [->,thick] (170:1) -- (0,0);
+      \draw [->,thick] (0,0) -- (-29.84:1);
+      \node at (60:0.5) [anchor=south west] {Air ($\mu_a$)};
+      \node at (-120:0.5) [anchor=north east] {Water ($\mu_w$)};
+      \begin{scope}
+        \clip (0,0) -- (-29.84:1) -- (-90:1) -- cycle;
+        \draw [red] (0,0) circle (0.2);
+        \node at (-60:0.3) {$\theta_w$};
+      \end{scope}
+      \begin{scope}
+        \clip (0,0) -- (170:1) -- (90:1) -- cycle;
+        \draw [red] (0,0) circle (0.2);
+        \node at (135:0.3) {$\theta_a$};
+      \end{scope}
+    \end{tikzpicture}
+    \begin{align*}
+      \frac{\sin \theta_a }{\sin \theta_w} &= \frac{\mu_w }{\mu_a}
+    \end{align*}
+  \end{center}
+\end{frame}
+\end{comment}
+
+\begin{frame}[fragile]{Snell's law}
+  \begin{center}
+    \begin{tikzpicture}[scale=3.0]
+      \fill [cyan!20!white] (-1,-1) rectangle (1,0);
+      \foreach \s/\c in {0/black,1/red,2/blue, 3/cyan, 4/orange, 5/green} 
+      {
+        \pgfmathsetmacro{\aw}{asin(sin(15*\s)/1.33)}
+
+        \draw [->,thick,\c] (90+15*\s:1) -- (0,0) -- ({-90+\aw}:1);
+      }
+      \node at (60:0.5) [anchor=south west] {Air};
+      \node at (-120:0.5) [anchor=north east] {Water};
+    \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Rules by which you can draw ray diagrams}
