@@ -62,6 +62,12 @@ media/dynamic-fusion-full.mp4:
 media/dynamic-fusion.mp4: media/dynamic-fusion-full.mp4
 	avconv -i "$^" -ss 00:00:00.0 -c:a copy -t 00:01:04 "$@"
 
+media/slowmolab-full.mp4: 
+	youtube-dl https://www.youtube.com/watch?v=tw3q4_jZv8M -o "$@"
+
+media/slowmolab.mp4: media/slowmolab-full.mp4
+	avconv -i "$^" -ss 00:04:00.0 -c:a copy -t 00:01:58 "$@"
+
 # if you want to clean up
 .PHONY: media_clean
 media_clean:
