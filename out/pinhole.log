@@ -1,0 +1,1049 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=pinholepreamble 2017.6.21)  21 JUN 2017 22:21
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**pinhole.tex
+(./pinhole.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+X
+\l_fontspec_script_int=\count330
+\l_fontspec_language_int=\count331
+\l_fontspec_strnum_int=\count332
+\l__fontspec_tmpa_dim=\dimen324
+\l__fontspec_tmpb_dim=\dimen325
+\l__fontspec_tmpc_dim=\dimen326
+\g__file_internal_ior=\read3
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count333
+\tipasavetokens=\toks53
+\tipachecktokens=\toks54
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 365.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 437.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 453.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 529.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 540.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+.................................................
+\l__fontspec_tmp_int=\count334
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 2705.
+LaTeX Info: Redefining \slshape on input line 2710.
+LaTeX Info: Redefining \scshape on input line 2715.
+LaTeX Info: Redefining \upshape on input line 2720.
+\l__fontspec_em_int=\count335
+\l__fontspec_emdef_int=\count336
+LaTeX Info: Redefining \em on input line 2736.
+LaTeX Info: Redefining \emph on input line 2742.
+LaTeX Info: Redefining \- on input line 2746.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 2841.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 2845.
+.................................................
+))
+(/home/shurjo/Documents/dev-old/xplore-workshop/mtheme/beamerfontthememetropoli
+s.sty
+Package: beamerfontthememetropolis 
+\g__fontspec_family_FiraSans-Light.ttf_int=\count337
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans-Light.ttf(0)' created for font 'FiraSans-Light.ttf'
+. with options [Mapping=tex-text,Ligatures=TeX,Path =
+. fonts/FiraSans/,BoldFont={FiraSans-Regular.ttf}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+smcp;"
+.................................................
+\g__fontspec_family_FiraMono-Regular.ttf_int=\count338
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraMono-Regular.ttf(0)' created for font
+. 'FiraMono-Regular.ttf' with options
+. [Mapping=tex-text,WordSpace={1,0,0},PunctuationSpace=WordSpace,Path =
+. fonts/FiraSans/].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraMono-Regular]/OT:script=latn;language=DFLT;mapping=te
+x-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+.................................................
+\g__fontspec_family_FiraSans-ExtraLight.ttf_int=\count339
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans-ExtraLight.ttf(0)' created for font
+. 'FiraSans-ExtraLight.ttf' with options [Mapping=tex-text,Path =
+. fonts/FiraSans/].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-ExtraLight]/OT:script=latn;language=DFLT;mapping
+=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-ExtraLight]/OT:script=latn;language=DFLT;mapping
+=tex-text;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans-Light.ttf(1)' created for font 'FiraSans-Light.ttf'
+. with options [Mapping=tex-text,Path = fonts/FiraSans/].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
+text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
+text;+smcp;"
+.................................................
+\g__fontspec_family_FiraSans-Regular.ttf_int=\count340
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans-Regular.ttf(0)' created for font
+. 'FiraSans-Regular.ttf' with options [Mapping=tex-text,Path =
+. fonts/FiraSans/].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
+x-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
+x-text;+smcp;"
+.................................................
+\g__fontspec_family_FiraSans-Medium.ttf_int=\count341
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans-Medium.ttf(0)' created for font 'FiraSans-Medium.ttf'
+. with options [Mapping=tex-text,Path = fonts/FiraSans/].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Medium]/OT:script=latn;language=DFLT;mapping=tex
+-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[fonts/FiraSans/FiraSans-Medium]/OT:script=latn;language=DFLT;mapping=tex
+-text;+smcp;"
+.................................................
+) (out/pinhole.aux)
+\openout1 = `pinhole.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 21.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=307.28987pt
+* \textheight=244.6939pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=14.22636pt
+* \marginparwidth=3.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box105
+Package hyperref Info: Link coloring OFF on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count342
+)
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
+
+(out/pinhole.out) (out/pinhole.out)
+\@outlinefile=\write5
+\openout5 = `pinhole.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmr/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
+t line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/FiraSans-Light.ttf(0)/bx/n on inpu
+t line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/FiraSans-Light.ttf(0)/m/n on input
+ line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/FiraSans-Light.ttf(0)/m/n on inpu
+t line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/FiraSans-Light.ttf(0)/m/it on inpu
+t line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/FiraSans-Light.ttf(0)/m/it on inp
+ut line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
+ut line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/FiraMono-Regular.ttf(0)/m/n on inp
+ut line 21.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
+f(0)/bx/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
+tf(0)/bx/it on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/lmr/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  EU1/FiraSans-Light.ttf(0)/bx/n --> EU1/FiraSans-Light.t
+tf(0)/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  EU1/FiraSans-Light.ttf(0)/m/n --> EU1/FiraSans-Light.tt
+f(0)/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  EU1/FiraSans-Light.ttf(0)/m/it --> EU1/FiraSans-Light.t
+tf(0)/bx/it on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  EU1/FiraMono-Regular.ttf(0)/m/n --> EU1/FiraMono-Regula
+r.ttf(0)/bx/n on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
+liography-dictionary/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
+ironment-dictionary/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
+ths-dictionary/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
+bers-dictionary/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
+orem-dictionary/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \includegraphics on input line 21.
+
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.13} (current compat level: 1.9).
+
+(out/pinhole.nav)
+File: media/cover_image_lower_res.jpg Graphic file (type QTm)
+ <use  "media/cover_image_lower_res.jpg" >
+\logoheight=\dimen327
+File: media/cover_image_lower_res.jpg Graphic file (type QTm)
+
+<use  "media/cover_image_lower_res.jpg" > [1] [2
+
+]
+File: media/slowmolab.png Graphic file (type QTm)
+
+<use  "media/slowmolab.png" > <VPlayer.swf> <media/slowmolab.mp4>
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+ [3
+
+] [4
+
+]
+(./tikz/suntreeboy.tex
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >
+File: media/boy.png Graphic file (type QTm)
+ <use  "media/boy.png" >)
+[5
+
+] (./tikz/suntreeboy.tex
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >
+File: media/boy.png Graphic file (type QTm)
+ <use  "media/boy.png" >)
+[6
+
+] (./tikz/suntreeboy.tex
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >
+File: media/boy.png Graphic file (type QTm)
+ <use  "media/boy.png" >)
+[7
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Font Warning: Font shape `EU1/FiraSans-Light.ttf(0)/m/it' undefined
+(Font)              using `EU1/FiraSans-Light.ttf(0)/m/n' instead on input line
+ 67.
+
+File: media/suntreeboy.pdf Graphic file (type QTm)
+<use  "media/suntreeboy.pdf" >
+Overfull \hbox (36.87459pt too wide) in paragraph at lines 67--67
+ [][] 
+ []
+
+[8
+
+]
+File: media/suntreeboy.pdf Graphic file (type QTm)
+ <use  "media/suntreeboy.pdf" >
+Overfull \hbox (36.87459pt too wide) in paragraph at lines 67--67
+ [][] 
+ []
+
+[9
+
+]
+File: media/suntreeboy.pdf Graphic file (type QTm)
+ <use  "media/suntreeboy.pdf" >
+Overfull \hbox (36.87459pt too wide) in paragraph at lines 67--67
+ [][] 
+ []
+
+[10
+
+]
+File: media/Euklid.jpg Graphic file (type QTm)
+ <use  "media/Euklid.jpg" > [11
+
+]
+File: media/euclid-straight-lines.png Graphic file (type QTm)
+ <use  "media/euclid-straight-lines.png" >
+<media/euclid-straight-lines.mp4>
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+
+Overfull \vbox (0.32852pt too high) detected at line 96
+ []
+
+[12
+
+] [13
+
+] [14
+
+]
+File: media/plain-cup.jpg Graphic file (type QTm)
+ <use  "media/plain-cup.jpg" >
+File: media/tape.jpg Graphic file (type QTm)
+ <use  "media/tape.jpg" >
+Overfull \vbox (7.65807pt too high) detected at line 113
+ []
+
+[15
+
+]
+File: media/coveredlid2.jpg Graphic file (type QTm)
+ <use  "media/coveredlid2.jpg" >
+File: media/coveredlid1.jpg Graphic file (type QTm)
+ <use  "media/coveredlid1.jpg" >
+Overfull \vbox (25.9478pt too high) detected at line 125
+ []
+
+[16
+
+]
+File: media/cup-without-pin.jpg Graphic file (type QTm)
+ <use  "media/cup-without-pin.jpg" > [17
+
+]
+File: media/pushpin.jpg Graphic file (type QTm)
+ <use  "media/pushpin.jpg" >
+[18
+
+]
+File: media/replace_parker_image.jpg Graphic file (type QTm)
+ <use  "media/replace_parker_image.jpg" >
+File: media/how-to-use-pinhole-campera.jpg Graphic file (type QTm)
+
+<use  "media/how-to-use-pinhole-campera.jpg" > [19
+
+] [20
+
+]
+File: media/tree.png Graphic file (type QTm)
+
+<use  "media/tree.png" > [21
+
+]
+File: media/example-proj-bulb.jpg Graphic file (type QTm)
+ <use  "media/example-proj-bulb.jpg" >
+File: media/xplore_pinhole_photo3.jpg Graphic file (type QTm)
+
+<use  "media/xplore_pinhole_photo3.jpg" > [22
+
+]
+File: media/upside_down_vase.png Graphic file (type QTm)
+
+<use  "media/upside_down_vase.png" > [23
+
+] [24
+
+]
+File: media/pinhole.png Graphic file (type QTm)
+ <use  "media/pinhole.png" >
+Overfull \vbox (18.96095pt too high) detected at line 209
+ []
+
+[25
+
+]
+File: media/camera_ina_room.jpg Graphic file (type QTm)
+ <use  "media/camera_ina_room.jpg" > <media/camera_ina_room.mp4>
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+ [26
+
+]
+[27
+
+] [28
+
+]
+\openout4 = `pinhole.vrb'.
+
+ (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 236
+ []
+
+[29
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 236
+ []
+
+[30
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 236
+ []
+
+File: media/tree.png Graphic file (type QTm)
+<use  "media/tree.png" > [31
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 236
+ []
+
+[32
+
+] [33
+
+] [34
+
+]
+File: media/cut-the-cup.jpg Graphic file (type QTm)
+ <use  "media/cut-the-cup.jpg" > [35
+
+]
+\openout4 = `pinhole.vrb'.
+
+ (out/pinhole.vrb
+(./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 382
+ []
+
+[36
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 382
+ []
+
+[37
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 382
+ []
+
+File: media/tree.png Graphic file (type QTm)
+<use  "media/tree.png" > [38
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 382
+ []
+
+[39
+
+] [40
+
+] [41
+
+]
+File: media/bighole.jpg Graphic file (type QTm)
+ <use  "media/bighole.jpg" > [42
+
+]
+\openout4 = `pinhole.vrb'.
+
+ (out/pinhole.vrb
+(./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 403
+ []
+
+[43
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 403
+ []
+
+[44
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 403
+ []
+
+File: media/tree.png Graphic file (type QTm)
+<use  "media/tree.png" > [45
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 403
+ []
+
+[46
+
+] [47
+
+] [48
+
+] (./tikz/smallaperture.tex
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >
+File: media/tree.png Graphic file (type QTm)
+
+<use  "media/tree.png" >) (./tikz/bigaperture.tex
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >
+File: media/tree.png Graphic file (type QTm)
+
+<use  "media/tree.png" >
+File: media/tree.png Graphic file (type QTm)
+ <use  "media/tree.png" >) [49
+
+]
+File: media/animalspinhole.pdf Graphic file (type QTm)
+
+<use  "media/animalspinhole.pdf" > [50
+
+]
+File: media/chambered-nautilus-accident.jpg Graphic file (type QTm)
+
+<use  "media/chambered-nautilus-accident.jpg" >
+<media/chambered-nautilus-accident.mp4>
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
+ [51
+
+] [52
+
+]
+File: media/multiple-holes.jpg Graphic file (type QTm)
+
+<use  "media/multiple-holes.jpg" > [53
+
+]
+\openout4 = `pinhole.vrb'.
+
+ (out/pinhole.vrb
+(./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 452
+ []
+
+[54
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 452
+ []
+
+[55
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 452
+ []
+
+File: media/tree.png Graphic file (type QTm)
+<use  "media/tree.png" > [56
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 452
+ []
+
+[57
+
+] [58
+
+] [59
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.50548pt too high) detected at line 477
+ []
+
+[60
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.30548pt too high) detected at line 477
+ []
+
+[61
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.30548pt too high) detected at line 477
+ []
+
+[62
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.30548pt too high) detected at line 477
+ []
+
+[63
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.30548pt too high) detected at line 477
+ []
+
+[64
+
+]
+File: media/Diagram_of_eye_evolution.pdf Graphic file (type QTm)
+ <use  "media/Diagram_of_eye_evolution.pdf" >
+Overfull \vbox (8.30548pt too high) detected at line 477
+ []
+
+[65
+
+]
+File: media/with-lens-camera.jpg Graphic file (type QTm)
+ <use  "media/with-lens-camera.jpg" >
+Overfull \vbox (8.8479pt too high) detected at line 488
+ []
+
+[66
+
+]
+\openout4 = `pinhole.vrb'.
+
+ (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 494
+ []
+
+[67
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 494
+ []
+
+[68
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 494
+ []
+
+File: media/tree.png Graphic file (type QTm)
+<use  "media/tree.png" > [69
+
+] (out/pinhole.vrb (./tikz/scientificmethod.tex))
+Overfull \vbox (10.99348pt too high) detected at line 494
+ []
+
+[70
+
+] [71
+
+] [72
+
+] [73
+
+]
+File: media/refractionspoon.jpg Graphic file (type QTm)
+ <use  "media/refractionspoon.jpg" > [74
+
+] [75
+
+]
+Overfull \vbox (22.96141pt too high) detected at line 587
+ []
+
+[76
+
+]
+Overfull \vbox (22.96141pt too high) detected at line 587
+ []
+
+[77
+
+]
+Overfull \vbox (22.96141pt too high) detected at line 587
+ []
+
+[78
+
+]
+File: media/twinkle.jpg Graphic file (type QTm)
+ <use  "media/twinkle.jpg" > [79
+
+] [80
+
+] (out/pinhole.bbl
+File: beamericonarticle.pdf Graphic file (type QTm)
+
+<use  "beamericonarticle.pdf" >
+File: beamericonarticle.pdf Graphic file (type QTm)
+ <use  "beamericonarticle.pdf" >
+File: beamericonarticle.pdf Graphic file (type QTm)
+
+<use  "beamericonarticle.pdf" >)
+Package atenddvi Info: Last page = 81.
+ [81
+
+]
+\tf@nav=\write6
+\openout6 = `pinhole.nav'.
+
+\tf@toc=\write7
+\openout7 = `pinhole.toc'.
+
+\tf@snm=\write8
+\openout8 = `pinhole.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 746.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 746.
+ (out/pinhole.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 746.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 746.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 746.
+ ) 
+Here is how much of TeX's memory you used:
+ 7165 strings out of 451047
+ 157627 string characters out of 5166343
+ 1267330 words of memory out of 5000000
+ 52202 multiletter control sequences out of 15000+600000
+ 9944 words of font info for 68 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 76i,16n,426p,578b,1068s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on out/pinhole.pdf (81 pages).
