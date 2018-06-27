@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=pinholepreamble 2017.6.21)  21 JUN 2017 22:21
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=pinholepreamble 2018.6.27)  27 JUN 2018 16:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **pinhole.tex
 (./pinhole.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 17.
@@ -15,18 +15,42 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTeX
+\l_fontspec_script_int=\count341
+\l_fontspec_language_int=\count342
+\l_fontspec_strnum_int=\count343
+\l_fontspec_tmpa_dim=\dimen294
+\l_fontspec_tmpb_dim=\dimen295
+\l_fontspec_tmpc_dim=\dimen296
+Variant \tl_gset:cV already defined; not changing it on line 69
 
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLa
+TeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+LaTeX Info: The control sequence `\[' is already robust on input line 471.
+LaTeX Info: The control sequence `\]' is already robust on input line 472.
+)
+LaTeX Info: Redefining \em on input line 22.
+LaTeX Info: Redefining \emph on input line 30.
+LaTeX Info: Redefining \- on input line 33.
+
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \oldstylenums with arg. spec. 'm' on line 128.
+*************************************************
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \liningnums with arg. spec. 'm' on line 132.
+.................................................
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTe
 X
-\l_fontspec_script_int=\count330
-\l_fontspec_language_int=\count331
-\l_fontspec_strnum_int=\count332
-\l__fontspec_tmpa_dim=\dimen324
-\l__fontspec_tmpb_dim=\dimen325
-\l__fontspec_tmpc_dim=\dimen326
-\g__file_internal_ior=\read3
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -34,7 +58,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
-LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
@@ -52,182 +76,173 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count333
+\tipaTiiicode=\count344
 \tipasavetokens=\toks53
 \tipachecktokens=\toks54
 )
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+. Defining document command \fontspec with arg. spec. 'O{}m' on line 41.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fontspec with sig. 'om' on line 355.
+. Defining document command \setmainfont with arg. spec. 'O{}m' on line 46.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmainfont with sig. 'om' on line 365.
+. Defining document command \setsansfont with arg. spec. 'O{}m' on line 51.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setsansfont with sig. 'om' on line 375.
+. Defining document command \setmonofont with arg. spec. 'O{}m' on line 56.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmonofont with sig. 'om' on line 385.
+. Defining document command \setmathrm with arg. spec. 'O{}m' on line 65.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathrm with sig. 'om' on line 399.
+. Defining document command \setboldmathrm with arg. spec. 'O{}m' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setboldmathrm with sig. 'om' on line 407.
+. Defining document command \setmathsf with arg. spec. 'O{}m' on line 73.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathsf with sig. 'om' on line 415.
+. Defining document command \setmathtt with arg. spec. 'O{}m' on line 77.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathtt with sig. 'om' on line 423.
+. Defining document command \newfontfamily with arg. spec. 'mO{}m' on line 96.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfamily with sig. 'mom' on line 437.
+. Defining document command \newfontface with arg. spec. 'mO{}m' on line 100.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontface with sig. 'mom' on line 453.
+. Defining document command \defaultfontfeatures with arg. spec. 'om' on line
+. 108.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+. Defining document command \addfontfeatures with arg. spec. 'm' on line 144.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \addfontfeatures with sig. 'm' on line 529.
+. Defining document command \newfontfeature with arg. spec. 'mm' on line 156.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfeature with sig. 'mm' on line 540.
+. Defining document command \newAATfeature with arg. spec. 'mmmm' on line 164.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+. Defining document command \newICUfeature with arg. spec. 'mmm' on line 172.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+. Defining document command \aliasfontfeature with arg. spec. 'mm' on line
+. 201.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+. Defining document command \aliasfontfeatureoption with arg. spec. 'mmm' on
+. line 203.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+. Defining document command \newfontscript with arg. spec. 'mm' on line 208.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontscript with sig. 'mm' on line 590.
+. Defining document command \newfontlanguage with arg. spec. 'mm' on line 235.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontlanguage with sig. 'mm' on line 594.
+. Defining document command \DeclareFontsExtensions with arg. spec. 'm' on
+. line 256.
 .................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
-.................................................
-\l__fontspec_tmp_int=\count334
+Variant \prop_gput:cnV already defined; not changing it on line 582
+Variant \prop_gput:cnx already defined; not changing it on line 583
+\l_fontspec_tmp_int=\count345
+LaTeX Info: Redefining \itshape on input line 2087.
+LaTeX Info: Redefining \slshape on input line 2092.
+LaTeX Info: Redefining \scshape on input line 2097.
+LaTeX Info: Redefining \upshape on input line 2102.
 
-(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 2705.
-LaTeX Info: Redefining \slshape on input line 2710.
-LaTeX Info: Redefining \scshape on input line 2715.
-LaTeX Info: Redefining \upshape on input line 2720.
-\l__fontspec_em_int=\count335
-\l__fontspec_emdef_int=\count336
-LaTeX Info: Redefining \em on input line 2736.
-LaTeX Info: Redefining \emph on input line 2742.
-LaTeX Info: Redefining \- on input line 2746.
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \oldstylenums with sig. 'm' on line 2841.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \liningnums with sig. 'm' on line 2845.
-.................................................
-))
-(/home/shurjo/Documents/dev-old/xplore-workshop/mtheme/beamerfontthememetropoli
-s.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/home/shurjobanerjee/Documents/dev/xplore-workshop/mtheme/beamerfontthememetro
+polis.sty
 Package: beamerfontthememetropolis 
-\g__fontspec_family_FiraSans-Light.ttf_int=\count337
+\g__file_internal_ior=\read3
+\g_fontspec_family_FiraSans-Light.ttf_int=\count346
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'FiraSans-Light.ttf(0)' created for font 'FiraSans-Light.ttf'
-. with options [Mapping=tex-text,Ligatures=TeX,Path =
-. fonts/FiraSans/,BoldFont={FiraSans-Regular.ttf}].
+. with options [Mapping=tex-text,Path = fonts/FiraSans/,
+. BoldFont={FiraSans-Regular.ttf}].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
-text;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
-text;mapping=tex-text;+smcp;"-
-. 'bold' (bx/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
-x-text;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
-x-text;mapping=tex-text;+smcp;"
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Light.ttf]/ICU:script=latn;language=DFLT;mapping
+=tex-text;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Light.ttf]/ICU:script=latn;language=DFLT;mapping
+=tex-text;+smcp;"
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Regular.ttf]/ICU:script=latn;language=DFLT;mappi
+ng=tex-text;"
+. 
+. * 'bold small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Regular.ttf]/ICU:script=latn;language=DFLT;mappi
+ng=tex-text;+smcp;"
 .................................................
-\g__fontspec_family_FiraMono-Regular.ttf_int=\count338
+\g_fontspec_family_FiraMono-Regular.ttf_int=\count347
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'FiraMono-Regular.ttf(0)' created for font
-. 'FiraMono-Regular.ttf' with options
-. [Mapping=tex-text,WordSpace={1,0,0},PunctuationSpace=WordSpace,Path =
+. 'FiraMono-Regular.ttf' with options [Mapping=tex-text,Path =
 . fonts/FiraSans/].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraMono-Regular]/OT:script=latn;language=DFLT;mapping=te
-x-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraMono-Regular.ttf]/ICU:script=latn;language=DFLT;mappi
+ng=tex-text;"
 .................................................
-\g__fontspec_family_FiraSans-ExtraLight.ttf_int=\count339
+\g_fontspec_family_FiraSans-ExtraLight.ttf_int=\count348
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -235,13 +250,17 @@ x-text;"
 . 'FiraSans-ExtraLight.ttf' with options [Mapping=tex-text,Path =
 . fonts/FiraSans/].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-ExtraLight]/OT:script=latn;language=DFLT;mapping
-=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-ExtraLight]/OT:script=latn;language=DFLT;mapping
-=tex-text;+smcp;"
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-ExtraLight.ttf]/ICU:script=latn;language=DFLT;ma
+pping=tex-text;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-ExtraLight.ttf]/ICU:script=latn;language=DFLT;ma
+pping=tex-text;+smcp;"
 .................................................
 .................................................
 . fontspec info: "defining-font"
@@ -249,15 +268,19 @@ x-text;"
 . Font family 'FiraSans-Light.ttf(1)' created for font 'FiraSans-Light.ttf'
 . with options [Mapping=tex-text,Path = fonts/FiraSans/].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
-text;"
-. - 'small caps'  (m/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Light]/OT:script=latn;language=DFLT;mapping=tex-
-text;+smcp;"
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Light.ttf]/ICU:script=latn;language=DFLT;mapping
+=tex-text;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Light.ttf]/ICU:script=latn;language=DFLT;mapping
+=tex-text;+smcp;"
 .................................................
-\g__fontspec_family_FiraSans-Regular.ttf_int=\count340
+\g_fontspec_family_FiraSans-Regular.ttf_int=\count349
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -265,28 +288,36 @@ text;+smcp;"
 . 'FiraSans-Regular.ttf' with options [Mapping=tex-text,Path =
 . fonts/FiraSans/].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
-x-text;"
-. - 'small caps'  (m/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Regular]/OT:script=latn;language=DFLT;mapping=te
-x-text;+smcp;"
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Regular.ttf]/ICU:script=latn;language=DFLT;mappi
+ng=tex-text;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Regular.ttf]/ICU:script=latn;language=DFLT;mappi
+ng=tex-text;+smcp;"
 .................................................
-\g__fontspec_family_FiraSans-Medium.ttf_int=\count341
+\g_fontspec_family_FiraSans-Medium.ttf_int=\count350
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'FiraSans-Medium.ttf(0)' created for font 'FiraSans-Medium.ttf'
 . with options [Mapping=tex-text,Path = fonts/FiraSans/].
 . 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Medium]/OT:script=latn;language=DFLT;mapping=tex
--text;"
-. - 'small caps'  (m/sc) with NFSS spec.:
-. <->"[fonts/FiraSans/FiraSans-Medium]/OT:script=latn;language=DFLT;mapping=tex
--text;+smcp;"
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Medium.ttf]/ICU:script=latn;language=DFLT;mappin
+g=tex-text;"
+. 
+. * 'small caps' with NFSS spec.:
+. 
+. <->"[fonts/FiraSans/FiraSans-Medium.ttf]/ICU:script=latn;language=DFLT;mappin
+g=tex-text;+smcp;"
 .................................................
 ) (out/pinhole.aux)
 \openout1 = `pinhole.aux'.
@@ -351,7 +382,7 @@ LaTeX Font Info:    ... okay on input line 21.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box105
+\AtBeginShipoutBox=\box106
 Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -360,7 +391,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count351
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -427,39 +458,39 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  EU1/FiraMono-Regular.ttf(0)/m/n --> EU1/FiraMono-Regula
 r.ttf(0)/bx/n on input line 21.
 
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
-ic-dictionary/translator-basic-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
+onary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
-liography-dictionary/translator-bibliography-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliograph
+y-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
-ironment-dictionary/translator-environment-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment
+-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
-ths-dictionary/translator-months-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dict
+ionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
-bers-dictionary/translator-numbers-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dic
+tionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
-orem-dictionary/translator-theorem-dictionary-English.dict
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
+tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 21.
 
-Package pgfplots notification 'compat/show suggested version=true': you might b
-enefit from \pgfplotsset{compat=1.13} (current compat level: 1.9).
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
 (out/pinhole.nav)
 File: media/cover_image_lower_res.jpg Graphic file (type QTm)
  <use  "media/cover_image_lower_res.jpg" >
-\logoheight=\dimen327
+\logoheight=\dimen297
 File: media/cover_image_lower_res.jpg Graphic file (type QTm)
 
 <use  "media/cover_image_lower_res.jpg" > [1] [2
@@ -468,56 +499,39 @@ File: media/cover_image_lower_res.jpg Graphic file (type QTm)
 File: media/slowmolab.png Graphic file (type QTm)
 
 <use  "media/slowmolab.png" > <VPlayer.swf> <media/slowmolab.mp4>
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
- [3
+
+Package pgf Warning: Your graphic driver pgfsys-xetex.def does not support tran
+sparency groups. This warning is given only once on input line 36.
+
+[3
 
 ] [4
 
-]
-(./tikz/suntreeboy.tex
+] (./tikz/suntreeboy.tex
 File: media/tree.png Graphic file (type QTm)
  <use  "media/tree.png" >
 File: media/boy.png Graphic file (type QTm)
- <use  "media/boy.png" >)
-[5
+
+<use  "media/boy.png" >) [5
 
 ] (./tikz/suntreeboy.tex
 File: media/tree.png Graphic file (type QTm)
  <use  "media/tree.png" >
 File: media/boy.png Graphic file (type QTm)
- <use  "media/boy.png" >)
-[6
+
+<use  "media/boy.png" >) [6
 
 ] (./tikz/suntreeboy.tex
 File: media/tree.png Graphic file (type QTm)
  <use  "media/tree.png" >
 File: media/boy.png Graphic file (type QTm)
- <use  "media/boy.png" >)
-[7
+
+<use  "media/boy.png" >) [7
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 67.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 67.
@@ -564,29 +578,7 @@ File: media/Euklid.jpg Graphic file (type QTm)
 File: media/euclid-straight-lines.png Graphic file (type QTm)
  <use  "media/euclid-straight-lines.png" >
 <media/euclid-straight-lines.mp4>
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
-
-Overfull \vbox (0.32852pt too high) detected at line 96
+Overfull \vbox (0.32982pt too high) detected at line 96
  []
 
 [12
@@ -662,29 +654,7 @@ Overfull \vbox (18.96095pt too high) detected at line 209
 
 ]
 File: media/camera_ina_room.jpg Graphic file (type QTm)
- <use  "media/camera_ina_room.jpg" > <media/camera_ina_room.mp4>
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
- [26
+ <use  "media/camera_ina_room.jpg" > <media/camera_ina_room.mp4> [26
 
 ]
 [27
@@ -820,29 +790,7 @@ File: media/animalspinhole.pdf Graphic file (type QTm)
 File: media/chambered-nautilus-accident.jpg Graphic file (type QTm)
 
 <use  "media/chambered-nautilus-accident.jpg" >
-<media/chambered-nautilus-accident.mp4>
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no p in font nullfont!
- [51
+<media/chambered-nautilus-accident.mp4> [51
 
 ] [52
 
@@ -1012,9 +960,7 @@ File: beamericonarticle.pdf Graphic file (type QTm)
  <use  "beamericonarticle.pdf" >
 File: beamericonarticle.pdf Graphic file (type QTm)
 
-<use  "beamericonarticle.pdf" >)
-Package atenddvi Info: Last page = 81.
- [81
+<use  "beamericonarticle.pdf" >) [81
 
 ]
 \tf@nav=\write6
@@ -1027,7 +973,7 @@ Package atenddvi Info: Last page = 81.
 \openout8 = `pinhole.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 746.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 746.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 746.
  (out/pinhole.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 746.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 746.
@@ -1038,12 +984,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 746.
  ) 
 Here is how much of TeX's memory you used:
- 7165 strings out of 451047
- 157627 string characters out of 5166343
- 1267330 words of memory out of 5000000
- 52202 multiletter control sequences out of 15000+600000
- 9944 words of font info for 68 fonts, out of 8000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 76i,16n,426p,578b,1068s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7939 strings out of 456792
+ 183360 string characters out of 5334777
+ 1140150 words of memory out of 5000000
+ 47414 multiletter control sequences out of 15000+600000
+ 9904 words of font info for 63 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 72i,16n,420p,575b,1173s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on out/pinhole.pdf (81 pages).

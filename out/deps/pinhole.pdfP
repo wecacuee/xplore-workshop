@@ -1,5 +1,5 @@
 #===Dependents for pinhole.tex:
-out/pinhole.pdf out/deps/pinhole.pdfP :\
+pinhole.pdf out/deps/pinhole.pdfP :\
     /etc/texmf/web2c/texmf.cnf\
     /usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst\
     /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map\
@@ -19,25 +19,26 @@ out/pinhole.pdf out/deps/pinhole.pdfP :\
     /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty\
     /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd\
     /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd\
+    /usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty\
     /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-environment-dictionary/translator-environment-dictionary-English.dict\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict\
-    /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict\
     /usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def\
     /usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd\
     /usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd\
+    /usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty\
     /usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty\
     /usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg\
     /usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty\
-    /usr/share/texlive/texmf-dist/tex/latex/fontspec/tuenc.def\
     /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\
     /usr/share/texlive/texmf-dist/tex/latex/media9/players/VPlayer.swf\
     /usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty\
     /usr/share/texlive/texmf-dist/web2c/texmf.cnf\
+    /usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment-dictionary/translator-environment-dictionary-English.dict\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict\
+    /usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict\
     /usr/share/texmf/tex/latex/tipa/t3cmr.fd\
     /usr/share/texmf/tex/latex/tipa/t3enc.def\
     /usr/share/texmf/web2c/texmf.cnf\
